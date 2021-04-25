@@ -51,22 +51,22 @@ header {
   width: 20%;
   height: 100%;
   padding: 30px;
+  padding-top: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   transition: 300ms left cubic-bezier(0.75, 0, 0.175, 1);
 }
 
 .menu.active {
   left: 0;
 }
-
-.menu a {
-  padding-bottom: 1vw;
+li a {
+  /* padding-bottom: 1vw; */
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2rem;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #3841f2;
   color: #3841f2;
@@ -75,6 +75,34 @@ header {
 
 .menu a:hover {
   color: #f2d5e8;
+}
+
+.list li a {
+  font-size: 1.5rem;
+  color: black;
+  -webkit-text-stroke-color: black;
+  padding-left: 0.5rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+.menu ul ul {
+  /* transform: scaleY(0); */
+  transition: all 0.5s;
+  height: 0;
+  overflow: hidden;
+}
+
+.menu > ul:hover ul {
+  /* transform: scaleY(1); */
+  height: 180px;
 }
 
 *,
@@ -92,6 +120,10 @@ header {
   width: 20vw;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
 .pos {
   position: relative;
   top: 23vw;
@@ -201,13 +233,15 @@ h4 a {
 .intro {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-size: 1.2rem;
   color: black;
-  padding: 0vw 2vw 1vw 2vw;
+  padding: 0vw 10vw 1vw 10vw;
   margin-bottom: 1vw;
+  text-align: center;
 }
 
 /*p4 */
@@ -310,7 +344,7 @@ h4 a {
 }
 
 .me {
-  width: 35%;
+  width: 100%;
   height: 100%;
   border: solid #3841f2 5px;
   margin-left: 12vw;
@@ -391,6 +425,17 @@ h4 a {
   width: 40%;
   height: 100%;
   margin-left: 1vw;
+}
+.silfen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.silf {
+  width: 45%;
+  height: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .description {
@@ -548,6 +593,41 @@ footer {
   height: 8vw;
 }
 
+/*BREAD VIDEO*/
+
+.bread {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  color: black;
+  padding: 0vw 20vw 1vw 20vw;
+  margin-bottom: 1vw;
+}
+
+.brief {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  color: black;
+  padding: 0vw 20vw 0vw 20vw;
+}
+.program {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  color: black;
+  padding: 0vw 20vw 1vw 20vw;
+  margin-bottom: 1vw;
+}
 @media only screen and (max-width: 600px) {
   .menu {
     width: 250px;
