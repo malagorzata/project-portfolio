@@ -21,7 +21,7 @@
   max-width: 89%;
 }
 
-main {
+.pic {
   display: grid;
   grid-area: mn;
 
@@ -85,7 +85,7 @@ main {
 }
 
 @media screen and (min-width: 320px) and (max-width: 450px) {
-  main {
+  .pic {
     display: grid;
     grid-template-areas:
       "h1 h1 h1"
@@ -106,7 +106,7 @@ main {
 }
 
 @media screen and (min-width: 450px) and (max-width: 800px) {
-  main {
+  .pic {
     display: grid;
     grid-template-areas:
       "h1 h1 h1"
