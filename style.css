@@ -344,8 +344,8 @@ h4 a {
 }
 
 .me {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: auto;
   border: solid #3841f2 5px;
   margin-left: 12vw;
   grid-area: me;
