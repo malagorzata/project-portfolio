@@ -966,4 +966,25 @@ footer {
     width: auto;
     height: 17vw;
   }
+
+  .menu > ul:hover ul {
+    /* transform: scaleY(1); */
+    height: 350px;
+  }
+
+  .list li a {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    padding-top: 6rem;
+  }
+
+  .menu ul:nth-child(3):hover ul {
+    height: 100px;
+  }
+  .menu ul:nth-child(5):hover ul {
+    height: 100px;
+  }
 }
